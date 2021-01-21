@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		tf.loadLayersModel('localstorage://SeungWook').then(function(model){ //Model Download From local
+
+			model.predict(tf.tensor([20])).print(); 
+		});
+
+	</script>
+
+</body>
+</html>
