@@ -9,7 +9,8 @@
 		
 		tf.loadLayersModel('localstorage://SeungWook').then(function(model){ //Model Download From local
 
-			model.predict(tf.tensor([20])).print(); 
+			model.predict(tf.tensor([20])).print();
+			model.predict(tf.tensor([50])).print();
 		});
 
 	</script>
